@@ -1,59 +1,38 @@
 # AngularProject
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
+Explicação das arquivos e pastas criadas automaticamente:
 
-## Development server
+*ARQUIVOS*
 
-To start a local development server, run:
+- .gitignore = Serve para armazenar arquivos não desejados para serem trackeados pelo git.
 
-```bash
-ng serve
-```
+- angular.json = contém diversar configurações. Ex: configs de build, inicialização do projeto com server, de teste, etc.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- package-lock.json = Informações de versões e bibliotecas que foram instaladas.
 
-## Code scaffolding
+- package.json = dependências do nosso projeto.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- tsconfig.app.json = configs do typescript específicas para o nosso projeto. 
 
-```bash
-ng generate component component-name
-```
+- tsconfig.json = configurações globais que se aplicam e todo o projeto. 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- tsconfig.spec.json = configuraões que vão ser utilizadas durante execução de testes unitários.
 
-```bash
-ng generate --help
-```
+*PASTAS e seus ARQUIVOS*
 
-## Building
+- public = imgs e assets estáticos do projeto.
 
-To build the project run:
+- src = código-fonte do projeto.
+-style.css = design do projeto.
+-main.ts = entry point da aplicação.
+-index.html = arquivo que será renderizado pelo navegador, para o usuário.
 
-```bash
-ng build
-```
+- app 
+--app.component.hmtl
+--app.component.css
+--app.component.ts
+--app.component.spec.ts 
+(Todos fazem referência ao componente principal "app")
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+--app.config.ts = é responsável por passar configs de como deve renderizar os componentes.
+--app.routes.js = As rotas das páginas virtuais serão armazenadas aqui.
